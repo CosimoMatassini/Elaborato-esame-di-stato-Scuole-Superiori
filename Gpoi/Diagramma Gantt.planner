@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20210529T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Analisi strategia migliore" note="" work="201600" start="20210529T000000Z" end="20210608T170000Z" work-start="20210531T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="Scelta amministratori database" note="" work="115200" start="20210608T170000Z" end="20210614T170000Z" work-start="20210609T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="3" name="Scelta designer sito web" note="" work="115200" start="20210608T170000Z" end="20210614T170000Z" work-start="20210609T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="4" name="Scelta programmatori" note="" work="86400" start="20210608T170000Z" end="20210611T170000Z" work-start="20210609T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="5" name="Scelta amministratori di sistema" note="" work="172800" start="20210608T170000Z" end="20210616T170000Z" work-start="20210609T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="6" name="Scelta amministratori di rete" note="" work="144000" start="20210608T170000Z" end="20210615T170000Z" work-start="20210609T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="7" name="scelta dispositivi Hardware" note="" work="144000" start="20210616T170000Z" end="20210621T120000Z" work-start="20210617T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="6" type="FS"/>
+        <predecessor id="1" predecessor-id="5" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="8" name="Installazione database" note="" work="230400" start="20210621T120000Z" end="20210625T111140Z" work-start="20210621T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="7" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="9" name="Installazione Server" note="" work="345600" start="20210608T170000Z" end="20210611T110140Z" work-start="20210609T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="10" name="Installazione gruppi di continuit&#xE0;" note="" work="144000" start="20210609T135820Z" end="20210614T080000Z" work-start="20210609T135820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="9" type="FF" lag="86400"/>
+      </predecessors>
+    </task>
+    <task id="11" name="Creazione Database" note="" work="460800" start="20210625T111140Z" end="20210707T101320Z" work-start="20210625T111140Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="8" type="FS"/>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="12" name="Testaggio funzionamento database" note="" work="201600" start="20210707T101320Z" end="20210712T144820Z" work-start="20210707T101320Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="11" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="13" name="Creazione programma server" note="" work="288000" start="20210614T080000Z" end="20210617T101820Z" work-start="20210614T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="10" type="FS"/>
+        <predecessor id="1" predecessor-id="4" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="14" name="Creazione sito web" note="" work="547200" start="20210712T144820Z" end="20210715T112000Z" work-start="20210712T144820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="12" type="FS"/>
+        <predecessor id="1" predecessor-id="13" type="FS"/>
+        <predecessor id="1" predecessor-id="3" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="15" name="Testaggio funzionamento sito web" note="" work="201600" start="20210715T112000Z" end="20210719T090640Z" work-start="20210715T112000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="14" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="16" name="Scelta email automation provider" note="" work="172800" start="20210615T170000Z" end="20210623T170000Z" work-start="20210616T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="6" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="17" name="pubblicazione sito web" note="" work="86400" start="20210719T090640Z" end="20210720T134140Z" work-start="20210719T090640Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="16" type="FS"/>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups>
+    <group id="1" name="Amministratori database" admin-name="Luisa Nava" admin-phone="" admin-email=""/>
+    <group id="2" name="Designer" admin-name="Alessandro Gelmi" admin-phone="" admin-email=""/>
+    <group id="3" name="Programmatori" admin-name="Cosimo Matassini" admin-phone="" admin-email=""/>
+    <group id="4" name="Amministratori sistema" admin-name="Fabrizia Neri" admin-phone="" admin-email=""/>
+    <group id="5" name="Amministratori rete" admin-name="Giulio Gelmi" admin-phone="" admin-email=""/>
+  </resource-groups>
+  <resources>
+    <resource group="2" id="1" name="Massimo Custodi" short-name="" type="1" units="0" email="" note="" std-rate="20"/>
+    <resource group="5" id="2" name="Chiara Tognaccini" short-name="" type="1" units="0" email="" note="" std-rate="18"/>
+    <resource group="4" id="3" name="Cecilia Nuti" short-name="" type="1" units="0" email="" note="" std-rate="17"/>
+    <resource group="2" id="4" name="Alessandro Gelmi" short-name="" type="1" units="0" email="" note="" std-rate="22"/>
+    <resource group="1" id="5" name="Lorena Innocenti" short-name="" type="1" units="0" email="" note="" std-rate="16"/>
+    <resource id="6" name="Database di backup" short-name="" type="2" units="0" email="" note="" std-rate="80000"/>
+    <resource id="7" name="Email automation provider" short-name="" type="1" units="0" email="" note="" std-rate="0.5"/>
+    <resource group="3" id="8" name="Cosimo Matassini" short-name="" type="1" units="0" email="" note="" std-rate="23"/>
+    <resource group="5" id="9" name="Giulio Gelmi" short-name="" type="1" units="0" email="" note="" std-rate="21"/>
+    <resource group="4" id="10" name="Fabrizia Neri" short-name="" type="1" units="0" email="" note="" std-rate="22"/>
+    <resource group="1" id="11" name="Luisa Nava" short-name="" type="1" units="0" email="" note="" std-rate="23"/>
+    <resource id="12" name="Database" short-name="" type="2" units="0" email="" note="" std-rate="150000"/>
+    <resource id="13" name="Server" short-name="" type="2" units="0" email="" note="" std-rate="120000"/>
+    <resource id="14" name="Gruppo di Continuit&#xE0;" short-name="" type="2" units="0" email="" note="" std-rate="16000"/>
+    <resource id="15" name="Computer" short-name="" type="2" units="0" email="" note="" std-rate="1020"/>
+    <resource group="5" id="16" name="Giulio Fontana" short-name="" type="1" units="0" email="" note="" std-rate="19"/>
+    <resource group="4" id="17" name="Marco Mancini" short-name="" type="1" units="0" email="" note="" std-rate="21"/>
+    <resource group="3" id="18" name="Alberto Ferrari" short-name="" type="1" units="0" email="" note="" std-rate="20"/>
+    <resource group="5" id="19" name="Bella Bruni" short-name="" type="1" units="0" email="" note="" std-rate="18"/>
+    <resource group="3" id="20" name="Gianluca Vianello" short-name="" type="1" units="0" email="" note="" std-rate="19"/>
+    <resource group="2" id="21" name="Noemi Ricci" short-name="" type="1" units="0" email="" note="" std-rate="20"/>
+    <resource group="3" id="22" name="Angelo Greco" short-name="" type="1" units="0" email="" note="" std-rate="17"/>
+  </resources>
+  <allocations>
+    <allocation task-id="14" resource-id="1" units="100"/>
+    <allocation task-id="9" resource-id="2" units="100"/>
+    <allocation task-id="9" resource-id="3" units="100"/>
+    <allocation task-id="14" resource-id="4" units="100"/>
+    <allocation task-id="12" resource-id="5" units="100"/>
+    <allocation task-id="11" resource-id="5" units="100"/>
+    <allocation task-id="8" resource-id="5" units="100"/>
+    <allocation task-id="8" resource-id="6" units="4"/>
+    <allocation task-id="17" resource-id="8" units="100"/>
+    <allocation task-id="15" resource-id="8" units="100"/>
+    <allocation task-id="14" resource-id="8" units="100"/>
+    <allocation task-id="13" resource-id="8" units="100"/>
+    <allocation task-id="17" resource-id="9" units="100"/>
+    <allocation task-id="9" resource-id="9" units="100"/>
+    <allocation task-id="7" resource-id="9" units="100"/>
+    <allocation task-id="9" resource-id="10" units="100"/>
+    <allocation task-id="7" resource-id="10" units="100"/>
+    <allocation task-id="12" resource-id="11" units="100"/>
+    <allocation task-id="11" resource-id="11" units="100"/>
+    <allocation task-id="8" resource-id="11" units="100"/>
+    <allocation task-id="17" resource-id="12" units="1"/>
+    <allocation task-id="15" resource-id="12" units="1"/>
+    <allocation task-id="14" resource-id="12" units="1"/>
+    <allocation task-id="12" resource-id="12" units="1"/>
+    <allocation task-id="11" resource-id="12" units="1"/>
+    <allocation task-id="8" resource-id="12" units="1"/>
+    <allocation task-id="17" resource-id="13" units="4"/>
+    <allocation task-id="15" resource-id="13" units="1"/>
+    <allocation task-id="14" resource-id="13" units="1"/>
+    <allocation task-id="13" resource-id="13" units="1"/>
+    <allocation task-id="9" resource-id="13" units="4"/>
+    <allocation task-id="10" resource-id="14" units="10"/>
+    <allocation task-id="17" resource-id="15" units="2"/>
+    <allocation task-id="15" resource-id="15" units="4"/>
+    <allocation task-id="14" resource-id="15" units="4"/>
+    <allocation task-id="13" resource-id="15" units="3"/>
+    <allocation task-id="12" resource-id="15" units="2"/>
+    <allocation task-id="11" resource-id="15" units="2"/>
+    <allocation task-id="10" resource-id="16" units="100"/>
+    <allocation task-id="10" resource-id="17" units="100"/>
+    <allocation task-id="15" resource-id="18" units="100"/>
+    <allocation task-id="14" resource-id="18" units="100"/>
+    <allocation task-id="13" resource-id="18" units="100"/>
+    <allocation task-id="9" resource-id="19" units="100"/>
+    <allocation task-id="15" resource-id="20" units="100"/>
+    <allocation task-id="14" resource-id="20" units="100"/>
+    <allocation task-id="13" resource-id="20" units="100"/>
+    <allocation task-id="14" resource-id="21" units="100"/>
+    <allocation task-id="15" resource-id="22" units="100"/>
+    <allocation task-id="14" resource-id="22" units="100"/>
+  </allocations>
+</project>

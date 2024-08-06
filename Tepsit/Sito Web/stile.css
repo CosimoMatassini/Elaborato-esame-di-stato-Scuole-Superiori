@@ -1,0 +1,56 @@
+body
+{
+	background-color: black; /* colore dello sfondo */
+	color: lightblue; /* colore del testo */
+	text-align: center;	/* testo centrato */
+}
+
+input
+{
+	margin: 10px;	/* margine da tutti i lati di 10 pixels */
+	height: 18px;	/* altezza di 18 pixels */
+}
+input[type=submit]	/* bottoni di conferma */
+{
+	height: 25px; /* altezza di 25 pixels */
+	display:inline-block; /* allineo il testo del bottone con quello che sarebbe al di fuori di esso */
+	cursor:pointer;	/* cambio il tipo di cursore */
+	font-weight: bold; /* testo in grassetto */
+}
+input[type=submit]:active {	/* quando viene premuto il bottone */
+	position:relative;	/* posizione che si riferisce a quella di partenza */
+	top:2px; /* sposta il bottone di 2 pixels verso il basso */
+}
+input[type=number]	/* gli input di tipo numero */
+{
+	width: 60px;	/* lunghezza di 60 pixels */
+}
+fieldset /* riquadri dei form */
+{
+	width: 300px; /* lunghezza di 300 pixels */
+	height: 200px; /* altezza di 200 pixels */
+    border: 1px solid lightblue;	/* bordo di 1 pixel di colore lightblue */
+    border-radius: 5px; /* raccordo dei bordi di 5 pixels */
+    margin-left: 10px;	/* margine di 10 pixels a sinistra */
+    margin-right: 10px; /* margine di 10 pixels a destra */
+}
+#griglia
+{
+	width: 100%; /* lunghezza a tutta pagina */
+	display: flex;	/* griglia per gestire il layout dei fieldsets */
+	flex-direction: row;	/* la direzione del layout dei fieldsets va per righe */
+	justify-content: space-evenly;	/* gestione della spaziatura tra i fieldsets */
+}
+@media all and (max-width: 1000px) /* i dispositivi che hanno come lunghezza massima 1000 pixels */
+{
+	fieldset
+	{
+	    margin: 5px auto; /* margine di 5px top e bottom -- automatico sinistra e destra */
+	}
+	
+	#griglia
+	{
+		flex-direction: column; /* la direzione del layout dei fieldsets va per colonne */
+		justify-content: center; /* i fieldsets vengono centrati nella pagina */
+	}
+}

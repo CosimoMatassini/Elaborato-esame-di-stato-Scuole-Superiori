@@ -1,0 +1,99 @@
+body
+{
+	background-color: black; /* colore dello sfondo */
+	color: lightblue; /* colore del testo */
+}
+h1
+{
+	text-align: center; /* testo centrato */
+	color: white; /* colore del testo */
+}
+p
+{
+	text-align: center; /* testo centrato */
+	font-weight: bold; /* testo in grassetto */
+}
+input[type=submit]	/* bottoni di conferma */
+{
+	width: 200px; /* lunghezza di 200 pixels */
+	height: 50px; /* altezza di 50 pixels */
+	border-radius: 3px; /* raccordo dei bordi di 3 pixels */
+	font-family: Verdana, Geneva, Tahoma, sans-serif; /* cambio font */
+	font-weight: bold; /* testo in grassetto */
+	font-size: large;	/* grandezza del testo: grande */
+	justify-self: center; /* il bottone viene centrato rispetto al suo container */
+	cursor:pointer;	/* cambio il tipo di cursore */
+}
+th , tr, td /* elementi della tabella */
+{
+	text-align: center; /* testo centrato */
+	text-shadow:none;	/* elimino l'ombra del testo */
+}
+th	/* titoli colonne della tabella */
+{
+	font-weight: bold; /* testo in grassetto */
+	font-size: larger; /* grandezza del testo: più grande */
+	background-color: grey;	/* colore dello sfondo */
+	color: aquamarine; /* colore del testo */
+	height: 30px;	/* altezza di 30 pixels */
+	width: 200px; /* lunghezza di 200 pixels */
+}
+td	/* record tabella */
+{
+	height: 20px; /* altezza di 20 pixels */
+	width: 200px; /* lunghezza di 200 pixels */
+	font-size: large;	/* grandezza del testo: grande */
+	border-bottom: 1px solid black;	/* bordo in basso di 1px nero */
+}
+table {
+	border-spacing: 1; /* spazio del bordo */
+	border-collapse: collapse; /* bordo unico */
+	background-color: #323232; /* colore dello sfondo */
+	border-radius:3px; /* raccordo dei bordi di 3 pixels */
+	overflow:hidden;	/* nascondo il contenuto fuori pagina */
+}
+
+footer
+{
+	position: absolute; /* posizione assoluta nella pagina */
+	left: 0px;	/* posizione di 0px a partire da sinistra */
+	bottom: 0px;/* posizione di 0px a partire da fine pagina */
+	width: 100vw; /* lunghezza 100% della pagina ma proporzionalmente ad essa */
+}
+
+div
+{
+	margin-top: 15px;	/* margine in alto di 15 pixels */
+	display: flex;	/* griglia per gestire il layout del contenuto */
+	flex-direction: row; /* la direzione del layout del contenuto va per righe */
+	justify-content: center;	/* il contenuto viene centrato nella pagina */
+}
+
+fieldset
+{
+	width: 40vw; /* lunghezza del 40% rispetto al container */
+}
+
+form
+{
+	margin-top: 5px; /* margine in alto di 5 pixels */
+}
+
+legend
+{
+	font-size: larger; /* grandezza del testo: più grande */
+	width: auto;	/* gestisce la lunghezza in automatico */
+	margin: 0 auto;	/* margine di 5px top e bottom -- automatico sinistra e destra */
+}
+
+legend, label
+{
+	font-size: large;	/* grandezza del testo: grande */
+}
+
+#tableheader
+{
+	border: 3px solid black; /* bordo di 1 pixel di colore nero */
+	border-radius: 5px; /* raccordo dei bordi di 5 pixels */
+	border-color: lightblue; /* colore del bordo */
+}

@@ -1,0 +1,3 @@
+il file è solamente uno schema che rappresenta come ho ideato la struttura centrale.
+
+Per problemi di apertura del programma versione 7, è stata utilizzata la versione 8 durante la progettazione del file.
